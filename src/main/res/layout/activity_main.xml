@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Диллер"
+            android:id="@+id/dealer"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/player"
+            android:background="#ff0000"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player"
+            android:id="@+id/player"
+            android:layout_marginBottom="17dp"
+            android:layout_above="@+id/bet10"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:id="@+id/score"
+            android:layout_alignTop="@+id/player"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bet"
+            android:id="@+id/bet"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bet 10"
+            android:id="@+id/bet10"
+            android:onClick="onBet10"
+            android:layout_above="@+id/result"
+            android:layout_alignLeft="@+id/player"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hit"
+            android:id="@+id/hit"
+            android:onClick="onHit"
+            android:layout_above="@+id/result"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stand"
+            android:id="@+id/stand"
+            android:onClick="onStand"
+            android:layout_alignTop="@+id/bet10"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bot1"
+            android:id="@+id/bot1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="#21ff29"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bot2"
+            android:id="@+id/bot2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="#00b5ff"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Result"
+            android:id="@+id/result"
+            android:background="#ffffff"
+            android:textColor="#010000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:id="@+id/bot1Score"
+            android:layout_above="@+id/bot1"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:id="@+id/bot2Score"
+            android:layout_above="@+id/bot2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/bot1Score"/>
+
+</RelativeLayout>
