@@ -3,7 +3,7 @@ package com.example.blackjack;
 import android.app.Activity;
 import android.widget.TextView;
 
-public class Bot extends Activity {
+public class Bot {
     int sum;
     boolean play = true;
     BlackJackHand hand;

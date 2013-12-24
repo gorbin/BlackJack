@@ -1,10 +1,9 @@
 package com.example.blackjack;
 
-/**
- * Created by Пользователь on 24.11.13.
- */
+
 public class Card {
     public final static int SPADES = 0, HEARTS = 1, DIAMONDS = 2, CLUBS = 3;
+	public final static String SPADES_STRING = "Пики", HEARTS_STRING = "Червы", DIAMONDS_STRING = "Бубны", CLUBS_STRING = "Трефы", ACE = "Туз", JACK = "Валет", QUEEN = "Королева", KING = "Король";
     private final int suit;
 
     private final int value;
@@ -25,22 +24,22 @@ public class Card {
     public String getSuitAsString() {
         switch ( suit ) {
             case SPADES:
-                return "Пики";
+                return SPADES_STRING;
             case HEARTS:
-                return "Червы";
+                return HEARTS_STRING;
             case DIAMONDS:
-                return "Бубны";
+                return DIAMONDS_STRING;
             case CLUBS:
-                return "Трефы";
+                return CLUBS_STRING;
             default:
-                return "Something went wrong with suit!";
+                return null;
         }
     }
 
     public String getValueAsString() {
         switch ( value ) {
             case 1:
-                return "Туз";
+                return ACE;
             case 2:
             case 3:
             case 4:
@@ -52,13 +51,13 @@ public class Card {
             case 10:
                 return Integer.toString(value);
             case 11:
-                return "Валет";
+                return JACK;
             case 12:
-                return "Дама";
+                return QUEEN;
             case 13:
-                return "Король";
+                return KING;
             default:
-                return "Something went wrong with value!";
+                return null;
         }
     }
 

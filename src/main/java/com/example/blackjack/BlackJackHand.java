@@ -1,8 +1,5 @@
 package com.example.blackjack;
 
-/**
- * Created by Пользователь on 24.11.13.
- */
 public class BlackJackHand extends Hand{
     public int getValue() {
         int value, count;

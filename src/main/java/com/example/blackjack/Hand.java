@@ -3,26 +3,26 @@ package com.example.blackjack;
 import java.util.Vector;
 
 public class Hand {
-    private Vector hand;
+    private ArrayList<Card> hand;
 
     public Hand() {
-        hand = new Vector();
+        hand = new ArrayList<Card>();
     }
 
     public void clear() {
-        hand.removeAllElements();
+        hand.clear();
     }
 
     public void addCard(Card c) {
-        hand.addElement(c);
+        hand.add(c);
     }
 
     public void removeCard(Card c) {
-        hand.removeElement(c);
+        hand.remove(c);
     }
 
     public void removeCard(int position) {
-        hand.removeElementAt(position);
+        hand.remove(position);
     }
 
     public int getCardCount() {
