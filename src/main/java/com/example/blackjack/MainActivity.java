@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.BreakIterator;
-
 public class MainActivity extends Activity {
 
     public final static int BET = 10;

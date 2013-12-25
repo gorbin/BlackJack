@@ -1,6 +1,6 @@
 package com.example.blackjack;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class Hand {
     private ArrayList<Card> hand;
@@ -31,7 +31,7 @@ public class Hand {
 
     public Card getCard(int position) {
         if (position >= 0 && position < hand.size())
-            return (Card)hand.elementAt(position);
+            return (Card)hand.get(position);
         else
             return null;
     }
